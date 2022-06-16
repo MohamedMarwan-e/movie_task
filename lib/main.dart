@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movie_task/controller/home_provider.dart';
 import 'package:movie_task/controller/movie_crew_cast_provider.dart';
 import 'package:movie_task/controller/person_details_provider.dart';
-import 'package:movie_task/data/services/components/remote/dio_helper.dart';
+import 'package:movie_task/services/components/remote/dio_helper.dart';
 import 'package:movie_task/view/screens/splash_screen.dart';
 import 'package:provider/provider.dart';
 

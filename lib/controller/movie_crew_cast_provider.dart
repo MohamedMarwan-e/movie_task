@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:movie_task/data/models/crew_cast_model.dart';
-import 'package:movie_task/data/services/components/remote/dio_helper.dart';
-import 'package:movie_task/data/services/components/remote/url.dart';
+import 'package:movie_task/services/components/remote/dio_helper.dart';
+import 'package:movie_task/services/components/remote/url.dart';
+
 
 class MovieCrewAndCastProvider extends ChangeNotifier{
   CrewAndCastModel? crewAndCastModel;

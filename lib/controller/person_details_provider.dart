@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:movie_task/data/models/person_details_model.dart';
 import 'package:movie_task/data/models/person_images_model.dart';
-import 'package:movie_task/data/services/components/remote/dio_helper.dart';
-import 'package:movie_task/data/services/components/remote/url.dart';
+import 'package:movie_task/services/components/remote/dio_helper.dart';
+import 'package:movie_task/services/components/remote/url.dart';
 
 class PersonDetailsProvider extends ChangeNotifier{
   PersonDetailsModel? personDetailsModel;

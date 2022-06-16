@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:movie_task/data/models/popular_movie_model.dart';
-import 'package:movie_task/data/services/components/remote/dio_helper.dart';
-import 'package:movie_task/data/services/components/remote/url.dart';
+import 'package:movie_task/services/components/remote/dio_helper.dart';
+import 'package:movie_task/services/components/remote/url.dart';
+
 
 class HomeProvider extends ChangeNotifier{
   PopularMovieModel? popularMovieModel;

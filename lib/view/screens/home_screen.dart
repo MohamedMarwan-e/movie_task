@@ -15,6 +15,7 @@ class HomeScreen extends StatefulWidget{
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
   PagingController<int, Result> pagingController = PagingController(firstPageKey: 1);
   final int pageSize = 1;
   bool servicesLoader = false;
