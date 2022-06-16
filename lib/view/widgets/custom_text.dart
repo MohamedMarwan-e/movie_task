@@ -12,7 +12,9 @@ class CustomText extends StatelessWidget {
   final TextOverflow? textOverflow;
   final TextAlign? textAlign;
 
-  const CustomText({Key? key,
+
+  const CustomText({
+    Key? key,
     this.text = '',
     this.fontSize = 14,
     this.color = Colors.black,
@@ -22,7 +24,7 @@ class CustomText extends StatelessWidget {
     this.width,
     this.fontWeight = FontWeight.bold,
     this.textOverflow,
-    this.textAlign
+    this.textAlign,
   }) : super(key: key);
 
   @override

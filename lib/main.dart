@@ -1,14 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:movie_task/screens/splash_screen.dart';
+import 'package:movie_task/controller/home_provider.dart';
+import 'package:movie_task/controller/movie_crew_cast_provider.dart';
+import 'package:movie_task/controller/person_details_provider.dart';
+import 'package:movie_task/data/services/components/remote/dio_helper.dart';
+import 'package:movie_task/view/screens/splash_screen.dart';
+import 'package:provider/provider.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  DioHelper.init();
+
+  runApp(
+      MultiProvider(
+          providers: [
+           ChangeNotifierProvider(create: (context) => HomeProvider()),
+           ChangeNotifierProvider(create: (context) => MovieCrewAndCastProvider()),
+           ChangeNotifierProvider(create: (context) => PersonDetailsProvider()),
+          ],
+       child: const MyApp()
+      )
+  );
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

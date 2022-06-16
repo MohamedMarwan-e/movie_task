@@ -13,9 +13,13 @@ class CustomImage extends StatelessWidget {
         this.isNetwork = true,
         this.radius = 6,
         this.borderRadius,
-        this.isShadow = true});
+        this.isShadow = true,
+        this.horizontal
+      });
+
   final String image;
   final double width;
+  final double? horizontal;
   final double height;
   final double borderWidth;
   final bool isShadow;
@@ -32,6 +36,7 @@ class CustomImage extends StatelessWidget {
     return Container(
       width: width,
       height: height,
+      margin: EdgeInsets.symmetric(horizontal: horizontal!,vertical: 10),
       decoration: BoxDecoration(
         color: bgColor,
         borderRadius: borderRadius ?? BorderRadius.circular(radius),
